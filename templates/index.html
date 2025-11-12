@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <h>NNN Certificate Generator</h>
+    <form action="/certificate" method="post">
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="name" placeholder="Your name here" type="text" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Generate Certificate</button>
+    </form>
+{% endblock %}
